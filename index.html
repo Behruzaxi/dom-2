@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div class="win">
+        <h1 class="to">Welcome To The  Real World</h1>
+        <p class="lorrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati<br> nulla mollitia assumenda sint incidunt voluptates <br>sapiente nihil quisquam! Deleniti placeat  <br></p>
+        <button class="buton" onclick="myFunction()"> Sign up</button>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        // function myFunction() { 
+        //   document.getElementById("myDialog").showModal(); 
+        // }
+
+        function myFunction()  {
+            document.getElementById("myDialog").showModal();
+        }
+        </script>
+        
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 class="to">Welcome To The  Real World</h1>
+    <p class="lorrem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati<br> nulla mollitia assumenda sint incidunt voluptates <br>sapiente nihil quisquam! Deleniti placeat  <br></p>
+    
+    
+    <button onclick="myFunction()" class="buton">Show dialog</button>
+    
+    
+    <dialog id="myDialog">
+     <div class="suuu">
+        <h3>Sign Up</h3>
+        <br>
+        <h4 class="name">Name</h4>
+        <input class="inp" type="text" placeholder="Enter Name">
+        <h4 class="name">Email</h4>
+        <input class="inp" type="email" placeholder="Enter Email">
+        <h4 class="name">Password</h4>
+        <input class="inp" placeholder="Enter Pasword" type="password">
+        <h4 class="name">Confirm Password</h4>
+        <input class="inp" type="password" placeholder="Confirm Placeholder">
+        <button id="remove" onclick="removeFunction()">Close</button>
+    </div> 
+    </dialog>
+    
+    <script>
+    function myFunction() { 
+      document.getElementById("myDialog").showModal(); 
+    } 
+
+    function removeFunction() {
+        const e = document.getElementById("myDialog");
+        e.remove();
+    }
+    </script>
+    
+    
+
+</body>
+</html>
